@@ -4,7 +4,7 @@
   "description": "",
   "main": "task.js",
   "scripts": {
-    "start": "index.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",

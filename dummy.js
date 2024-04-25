@@ -8,12 +8,12 @@
 
 // module.exports = { printData, printDataCustom };
 
-const cubeVolume = (sideLength) => {
-  return sideLength * sideLength * sideLength;
-};
+// const cubeVolume = (sideLength) => {
+//   return sideLength * sideLength * sideLength;
+// };
 
-const cubeSurfaceArea = (sideLength) => {
-  return 6 * sideLength * sideLength;
-};
+// const cubeSurfaceArea = (sideLength) => {
+//   return 6 * sideLength * sideLength;
+// };
 
-module.exports = { cubeVolume, cubeSurfaceArea };
+// module.exports = { cubeVolume, cubeSurfaceArea };
