@@ -27,6 +27,6 @@ const { setInitialData, getData, getDataById } = require("./people");
 
 setInitialData();
 getData();
-getDataById(1);
+getDataById(2);
 
 //============END===============

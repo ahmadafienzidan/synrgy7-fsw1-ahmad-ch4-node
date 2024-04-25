@@ -73,22 +73,14 @@ const setInitialData = () => {
 const getData = () => {
   fs.readFile("./people.txt", "utf-8", (err, data) => {
     if (err) console.log("error");
-    console.log(JSON.parse(data));
+    console.log(JSON.parse(data).map((row) => row.name));
   });
 };
 
 const getDataById = (id) => {
   fs.readFile("./people.txt", "utf-8", (err, data) => {
-    if (err) {
-      console.error("error", err);
-    }
-    const people = JSON.parse(data);
-    const person = people.find((p) => p.id === id);
-    if (person) {
-      console.log("Nama:", person.name);
-    } else {
-      console.log("empty data");
-    }
+    if (err) console.log("error");
+    console.log(JSON.parse(data).find((row) => row.id === id));
   });
 };
 module.exports = { setInitialData, getData, getDataById };
